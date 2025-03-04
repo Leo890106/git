@@ -1,6 +1,7 @@
 class address : https://www.youtube.com/watch?v=RGOj5yH7evk
 
 git clone address  //open the repo on local
+
 git add .  //track all the data in the dictiionary 
            //if you want to track specific file use 
 git add filename
