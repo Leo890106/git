@@ -18,5 +18,17 @@ Why we need branch ?
 push順序  git add  ->  git commit  -> git push
 
 在pull之前先確認所在的分支與要拉的分支是否依樣  
-
 pull順序  git branch -> git pull
+
+在merge過後記得刪除分之
+git branch -d branch_name
+
+當多個branch做merge時 有可能發生合併衝突 git不知道該保留哪些東西而那些東西是多餘的此時需要人為介入去解絕
+git merge branch-name
+
+undo 撤銷commit回到某次的更改
+git log查看更改的紀錄  ->  複製你要回到地版本的hash value  -> git reset hash_value
+
+undo 撤銷commit回到某次的更改並刪除那之後的版本
+git log查看更改的紀錄  ->  複製你要回到地版本的hash value  -> git reset --hard hash_value
+
